@@ -1,0 +1,11 @@
+{
+  "referenceGuide":"Cite all the reference sources in the required format. Proper citations will help you avoid unnecessary trouble but does not make it acceptable to copy code. Read the course and university policy statements in this regard. When working with others, limit the discussion to block diagrams and arrows. Do not look at another students' code. Read the JSON semantics and make use of JSON validator from the Internet if needed.",
+  "websites":[
+    {
+      "title":"Apache Hadoop 2.9.1 - MapReduce Tutorial",
+      "url":"https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#Example:_WordCount_v1.0",
+      "code":"I learned from the code in the section Example: WordCount v1.0.",
+      "description":"I followed the pattern of implementing map and reduce class in the example since it is generic."
+    }
+  ]
+}

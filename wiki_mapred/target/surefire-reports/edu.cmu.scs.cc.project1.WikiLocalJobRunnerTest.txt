@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: edu.cmu.scs.cc.project1.WikiLocalJobRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.037 sec <<< FAILURE! - in edu.cmu.scs.cc.project1.WikiLocalJobRunnerTest
+run(edu.cmu.scs.cc.project1.WikiLocalJobRunnerTest)  Time elapsed: 0.958 sec  <<< ERROR!
+java.lang.RuntimeException: To be implemented
+	at edu.cmu.scs.cc.project1.WikiLocalJobRunnerTest.runJob(WikiLocalJobRunnerTest.java:79)
+	at edu.cmu.scs.cc.project1.WikiLocalJobRunnerTest.run(WikiLocalJobRunnerTest.java:40)
+

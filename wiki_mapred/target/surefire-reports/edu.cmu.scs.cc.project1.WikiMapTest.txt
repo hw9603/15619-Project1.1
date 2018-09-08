@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.cmu.scs.cc.project1.WikiMapTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in edu.cmu.scs.cc.project1.WikiMapTest
+testWikiMapper(edu.cmu.scs.cc.project1.WikiMapTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.RuntimeException: add map test cases on your own
+	at edu.cmu.scs.cc.project1.WikiMapTest.testWikiMapper(WikiMapTest.java:10)
+

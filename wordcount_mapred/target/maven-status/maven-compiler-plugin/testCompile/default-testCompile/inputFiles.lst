@@ -1,0 +1,4 @@
+/home/clouduser/Project1/wordcount_mapred/src/test/java/edu/cmu/scs/cc/project1/WordCountMapTest.java
+/home/clouduser/Project1/wordcount_mapred/src/test/java/edu/cmu/scs/cc/project1/WordCountLocalJobRunnerTest.java
+/home/clouduser/Project1/wordcount_mapred/src/test/java/edu/cmu/scs/cc/project1/WordCountReduceTest.java
+/home/clouduser/Project1/wordcount_mapred/src/test/java/edu/cmu/scs/cc/project1/WordCountMapReduceTest.java

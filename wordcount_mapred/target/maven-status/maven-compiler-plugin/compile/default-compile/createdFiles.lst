@@ -1,0 +1,5 @@
+edu/cmu/scs/cc/project1/WordCount.class
+edu/cmu/scs/cc/project1/WordCountSequentialMap.class
+edu/cmu/scs/cc/project1/WordCountMapper.class
+edu/cmu/scs/cc/project1/WordCountReducer.class
+edu/cmu/scs/cc/project1/WordCountSequentialReduce.class

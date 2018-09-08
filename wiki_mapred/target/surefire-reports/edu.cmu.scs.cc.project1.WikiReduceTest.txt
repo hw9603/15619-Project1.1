@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: edu.cmu.scs.cc.project1.WikiReduceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in edu.cmu.scs.cc.project1.WikiReduceTest
+testWikiReducer(edu.cmu.scs.cc.project1.WikiReduceTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.RuntimeException: add reduce test cases on your own
+	at edu.cmu.scs.cc.project1.WikiReduceTest.testWikiReducer(WikiReduceTest.java:9)
+
