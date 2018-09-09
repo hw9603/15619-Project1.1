@@ -28,7 +28,7 @@ public class WikiReducer
             dailyViews[date] += count;
             totalMonthViews += count;
         }
-        if (totalMonthViews <= 10000) return;
+        if (totalMonthViews <= 100000) return;
 
         String pageViews = "";
         for (int view : dailyViews) {

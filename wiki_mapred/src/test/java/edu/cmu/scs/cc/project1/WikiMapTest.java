@@ -27,18 +27,18 @@ public class WikiMapTest extends TestCase {
     public void testWikiMapper() throws IOException  {
         // throw new RuntimeException("add map test cases on your own");
         driver.withMapInputPath(new Path("/home/clouduser/Project1/wiki_mapred/input/pageview-20180308-000000.gz")) // simulate the input path
-            .withInput(new Text(""), new Text("en Apple 10000 0")) // set the input records
+            .withInput(new Text(""), new Text("en Apple 100000 0")) // set the input records
             .withInput(new Text(""), new Text("en Apple 7 0"))
-            .withInput(new Text(""), new Text("en Banana 10000 0"))
+            .withInput(new Text(""), new Text("en Banana 100000 0"))
             .withInput(new Text(""), new Text("en Banana 1 0"))
             .withInput(new Text(""), new Text("en Apple 1 0"))
-            .withInput(new Text(""), new Text("en Carnegie_Mellon_University 20000 0"))
-            .withOutput(new Text("Apple"), new Text("10000\t0"))
+            .withInput(new Text(""), new Text("en Carnegie_Mellon_University 200000 0"))
+            .withOutput(new Text("Apple"), new Text("100000\t0"))
             .withOutput(new Text("Apple"), new Text("7\t0"))
-            .withOutput(new Text("Banana"), new Text("10000\t0"))
+            .withOutput(new Text("Banana"), new Text("100000\t0"))
             .withOutput(new Text("Banana"), new Text("1\t0"))
             .withOutput(new Text("Apple"), new Text("1\t0"))
-            .withOutput(new Text("Carnegie_Mellon_University"), new Text("20000\t0"))
+            .withOutput(new Text("Carnegie_Mellon_University"), new Text("200000\t0"))
             .runTest(false);
     }
 }
