@@ -1,3 +1,5 @@
-edu/cmu/scs/cc/project1/WikiDataAnalysis.class
 edu/cmu/scs/cc/project1/WikiReducer.class
+edu/cmu/scs/cc/project1/DataFilter.class
+edu/cmu/scs/cc/project1/WikiDataAnalysis.class
 edu/cmu/scs/cc/project1/WikiMapper.class
+edu/cmu/scs/cc/project1/PercentDecoder.class

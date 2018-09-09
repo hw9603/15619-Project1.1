@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
@@ -73,10 +74,20 @@ public class WikiLocalJobRunnerTest {
 
         job.setInputFormatClass(TextInputFormat.class);
 
+        job.setMapOutputKeyClass(Text.class);
+        job.setMapOutputKeyClass(Text.class);
+
+        job.setOutputKeyClass(Text.class);
+        job.setOutputValueClass(Text.class);
+
+        job.setMapperClass(WikiMapper.class);
+        job.setReducerClass(WikiReducer.class);
+
         FileInputFormat.setInputPaths(job, inputPath);
         FileOutputFormat.setOutputPath(job, outputPath);
 
-        throw new RuntimeException("To be implemented");
+        job.waitForCompletion(false);
+        return job;
     }
 
 }
