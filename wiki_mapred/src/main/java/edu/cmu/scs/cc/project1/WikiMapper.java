@@ -11,7 +11,6 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 import org.apache.hadoop.mapreduce.Mapper;
 
-
 /**
  * Mapper Utility.
  */
@@ -24,13 +23,12 @@ public class WikiMapper
                     ) throws IOException, InterruptedException  {
         // Implement the code here for mapper of wiki data analysis,
         // you may need to change the key/value pair format as per your design
-        PrintWriter err = new PrintWriter(
-        new OutputStreamWriter(System.err, StandardCharsets.UTF_8), true);
 
         FileSplit fileSplit = (FileSplit) context.getInputSplit();
         String filename = fileSplit.getPath().getName();
         String baseFilename = FilenameUtils.getBaseName(filename);
         // example for absoluteDate: 20180308
+        // I don't think I need to handle exception here
         int absoluteDate = Integer.parseInt(baseFilename.split("-")[1]);
 
         // need to convert to {0,1,2,...,30} for convenience
@@ -39,12 +37,9 @@ public class WikiMapper
                         ? (absoluteDate - 20180401 + 24)
                         : (absoluteDate - 20180308);
 
-        // err.println(value.toString() + "\n");
         String[] columns = DataFilter.getColumns(value.toString());
         // filter out invalid records
-        // err.println(columns + "\n");
         if (!DataFilter.checkAllRules(columns)) return;
-        // err.println("another hello?" + "\n");
         String result = columns[2];
         result += "\t" + dateIndex; // + operator silently convert int to string
         countDatePair.set(result);

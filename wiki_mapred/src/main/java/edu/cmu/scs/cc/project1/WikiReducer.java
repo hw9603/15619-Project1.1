@@ -23,7 +23,13 @@ public class WikiReducer
         for (Text val : values) {
             String valString = val.toString();
             String[] countDate= valString.split("\t");
-            int count = Integer.parseInt(countDate[0]);
+            int count = 0;
+            try {
+                count = Integer.parseInt(countDate[0]);
+            } catch (NumberFormatException e) {
+                // ignore this exception and continue processing following input lines
+            }
+
             int date = Integer.parseInt(countDate[1]);
             dailyViews[date] += count;
             totalMonthViews += count;

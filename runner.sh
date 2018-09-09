@@ -279,9 +279,9 @@ q4() {
   # You can solve the problem by filling in the correct method or parameters
   # to the following Python code:
   #
-  # <import libs on your own>
-  # df = pandas.read_table('output', index_col=1, encoding='utf-8', <params>)
-  # df.<method>.to_csv(sys.stdout, encoding='utf-8', <params>)
+  # import pandas
+  # df = pandas.read_table('output', index_col=1, encoding='utf-8', header=None)
+  # df.describe().to_csv(sys.stdout, encoding='utf-8', float_format='%.2f')
   #
   # `index_col=1` means the second column of the input file, i.e. `page_title`
   # will be read as indexes.
@@ -295,7 +295,7 @@ q4() {
   # 50%,149564.00,4962.00,...,4657.00
   # 75%,217951.25,7745.75,...,7126.50
   # max,12220791.00,432462.00,...,342737.00
-  :
+  python3 q4.py
 }
 
 q5() {
