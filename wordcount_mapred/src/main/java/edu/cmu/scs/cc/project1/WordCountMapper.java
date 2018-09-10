@@ -1,17 +1,17 @@
 package edu.cmu.scs.cc.project1;
 
-import java.util.StringTokenizer;
 import java.io.IOException;
 import java.lang.InterruptedException;
-
+import java.util.StringTokenizer;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.VIntWritable;
 import org.apache.hadoop.mapreduce.Mapper;
 
 public class WordCountMapper
         extends Mapper<Object, Text, Text, VIntWritable> {
-    private final static VIntWritable one = new VIntWritable(1);
+    private static final VIntWritable one = new VIntWritable(1);
     private Text word = new Text();
+
     /**
      * The Mapper class to run the word count job.
      *
@@ -26,8 +26,8 @@ public class WordCountMapper
      * @param value input value of the mapper
      * @param context output key/value pair of the mapper
      */
-    public void map(Object key, Text value, Context context
-                    ) throws IOException, InterruptedException {
+    public void map(Object key, Text value, Context context)
+                    throws IOException, InterruptedException {
         StringTokenizer itr = new StringTokenizer(value.toString());
         while (itr.hasMoreTokens()) {
             word.set(itr.nextToken());

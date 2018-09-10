@@ -1,13 +1,187 @@
 filter:
 
 q1:
-
+2018-08-24 02:42:11,505 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.lang.NullPointerException
+2018-08-24 02:41:54,645 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.lang.NullPointerException
+2018-08-24 02:42:03,394 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.lang.NullPointerException
+INFO: Registering org.apache.hadoop.yarn.webapp.GenericExceptionHandler as a provider class
+INFO: Binding org.apache.hadoop.yarn.webapp.GenericExceptionHandler to GuiceManagedComponentProvider with the scope "Singleton"
+2018-08-24 02:41:44,821 ERROR [IPC Server handler 1 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1535076604056_0082_m_000000_0 - exited : java.lang.NullPointerException
+2018-08-24 02:41:44,821 INFO [IPC Server handler 1 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_0: Error: java.lang.NullPointerException
+2018-08-24 02:41:44,822 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_0: Error: java.lang.NullPointerException
+2018-08-24 02:41:54,679 ERROR [IPC Server handler 1 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1535076604056_0082_m_000000_1 - exited : java.lang.NullPointerException
+2018-08-24 02:41:54,679 INFO [IPC Server handler 1 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_1: Error: java.lang.NullPointerException
+2018-08-24 02:41:54,681 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_1: Error: java.lang.NullPointerException
+2018-08-24 02:42:03,418 ERROR [IPC Server handler 1 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1535076604056_0082_m_000000_2 - exited : java.lang.NullPointerException
+2018-08-24 02:42:03,418 INFO [IPC Server handler 1 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_2: Error: java.lang.NullPointerException
+2018-08-24 02:42:03,419 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_2: Error: java.lang.NullPointerException
+2018-08-24 02:42:11,528 ERROR [IPC Server handler 3 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1535076604056_0082_m_000000_3 - exited : java.lang.NullPointerException
+2018-08-24 02:42:11,528 INFO [IPC Server handler 3 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_3: Error: java.lang.NullPointerException
+2018-08-24 02:42:11,529 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_3: Error: java.lang.NullPointerException
+2018-08-24 02:41:44,795 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.lang.NullPointerException
 q2:
-
+java.lang.NullPointerException
 q3:
-
+2018-08-24 02:42:11,505 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:41:54,645 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:42:03,394 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:41:44,821 ERROR [IPC Server handler 1 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1535076604056_0082_m_000000_0 - exited : java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:41:44,821 INFO [IPC Server handler 1 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_0: Error: java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:41:44,822 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_0: Error: java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:41:54,679 ERROR [IPC Server handler 1 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1535076604056_0082_m_000000_1 - exited : java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:41:54,679 INFO [IPC Server handler 1 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_1: Error: java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:41:54,681 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_1: Error: java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:42:03,418 ERROR [IPC Server handler 1 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1535076604056_0082_m_000000_2 - exited : java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:42:03,418 INFO [IPC Server handler 1 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_2: Error: java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:42:03,419 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_2: Error: java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:42:11,528 ERROR [IPC Server handler 3 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1535076604056_0082_m_000000_3 - exited : java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:42:11,528 INFO [IPC Server handler 3 on 37487] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_3: Error: java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:42:11,529 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1535076604056_0082_m_000000_3: Error: java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+--
+2018-08-24 02:41:44,795 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.lang.NullPointerException
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:30)
+	at edu.cmu.scs.cc.project1.WordCountMapper.map(WordCountMapper.java:10)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:796)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:342)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:175)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
 q4:
-,0
 count,1563418
 unique,1563390
 top,Weird_Al_Yankovic
@@ -15,6 +189,6 @@ freq,3
 q5:
 
 q6:
-
+{"16605":"Martin_Shkreli","12338":"Pamela_Anderson","11394":"Damarious_Randall","11355":"XHamster","9959":"Tyrod_Taylor"}
 q7:
-
+{}

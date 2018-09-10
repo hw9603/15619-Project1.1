@@ -136,7 +136,7 @@ q1() {
   # <input_filename>:<matched_line>
   # <input_filename>:<matched_line>
   # ...
-  :
+  grep "Exception" mapreduce_log
 }
 
 q2() {
@@ -172,7 +172,7 @@ q2() {
   # <package.ExceptionName>
   # <package.ExceptionName>
   # ...
-  :
+  grep -oP '([\w.|.]+)Exception\b' mapreduce_log | sort -u
 }
 
 q3() {
@@ -219,7 +219,7 @@ q3() {
   # ...
   # <the 8th line of context>
   # ...
-  :
+  grep -A 8 'java.lang.NullPointerException' mapreduce_log
 }
 
 ################################################################################
@@ -332,7 +332,7 @@ q5() {
   #
   # Standard output format:
   # <a decimal value with 2 decimal places>
-  :
+  python3 q5.py
 }
 
 q6() {
@@ -360,7 +360,7 @@ q6() {
   #
   # Standard output format:
   # {"Stephen_Hawking":12220791,...,"Deaths_in_2018":3076157}
-  :
+  python3 q6.py
 }
 
 q7() {
@@ -399,7 +399,7 @@ q7() {
   #
   # Standard output format:
   # {"UMBC_Retrievers_men's_basketball":3,...,"Gonzaga_Bulldogs_men's_basketball":6}
-  :
+  python3 q7.py
 }
 
 ################################################################################

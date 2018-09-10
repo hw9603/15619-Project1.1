@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: edu.cmu.scs.cc.project1.WikiLocalJobRunnerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.702 sec - in edu.cmu.scs.cc.project1.WikiLocalJobRunnerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.662 sec - in edu.cmu.scs.cc.project1.WikiLocalJobRunnerTest

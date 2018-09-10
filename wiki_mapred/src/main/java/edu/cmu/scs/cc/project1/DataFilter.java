@@ -8,11 +8,11 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Map.Entry;
 import java.util.TreeMap;
-import java.nio.charset.StandardCharsets;
 
 /**
  * <p>Implement data filter with test-driven development.</p>

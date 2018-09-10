@@ -26,7 +26,8 @@ public class WikiMapTest extends TestCase {
     @Test
     public void testWikiMapper() throws IOException  {
         // throw new RuntimeException("add map test cases on your own");
-        driver.withMapInputPath(new Path("/home/clouduser/Project1/wiki_mapred/input/pageview-20180308-000000.gz")) // simulate the input path
+        driver.withMapInputPath(
+            new Path("/home/clouduser/Project1/wiki_mapred/input/pageview-20180308-000000.gz"))
             .withInput(new Text(""), new Text("en Apple 100000 0")) // set the input records
             .withInput(new Text(""), new Text("en Apple 7 0"))
             .withInput(new Text(""), new Text("en Banana 100000 0"))

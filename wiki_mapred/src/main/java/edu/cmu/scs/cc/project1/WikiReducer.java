@@ -14,6 +14,9 @@ public class WikiReducer
     private Text result = new Text();
     private Text totalViews = new Text();
 
+    /**
+     * reduce function.
+     */
     public void reduce(Text key, Iterable<Text> values, Context context
                         ) throws IOException, InterruptedException {
         // Implement the code here for reducer of wiki data analysis,
@@ -22,7 +25,7 @@ public class WikiReducer
         int[] dailyViews = new int[30];
         for (Text val : values) {
             String valString = val.toString();
-            String[] countDate= valString.split("\t");
+            String[] countDate = valString.split("\t");
             int count = 0;
             try {
                 count = Integer.parseInt(countDate[0]);

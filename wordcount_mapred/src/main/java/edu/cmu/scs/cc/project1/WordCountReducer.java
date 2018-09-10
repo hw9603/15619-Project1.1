@@ -10,6 +10,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 public class WordCountReducer
         extends Reducer<Text, VIntWritable, Text, VIntWritable> {
     private VIntWritable result = new VIntWritable();
+
     /**
      * The Reducer class to run the word count job.
      *
@@ -21,8 +22,8 @@ public class WordCountReducer
      * @param values input value of the reducer
      * @param context output key/value pair of the reducer
      */
-    public void reduce(Text key, Iterable<VIntWritable> values, Context context
-                        ) throws IOException, InterruptedException {
+    public void reduce(Text key, Iterable<VIntWritable> values, Context context)
+                        throws IOException, InterruptedException {
         int sum = 0;
         for (VIntWritable val : values) {
             sum += val.get();

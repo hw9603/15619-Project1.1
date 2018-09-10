@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: edu.cmu.scs.cc.project1.WordCountMapReduceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 sec - in edu.cmu.scs.cc.project1.WordCountMapReduceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 sec - in edu.cmu.scs.cc.project1.WordCountMapReduceTest

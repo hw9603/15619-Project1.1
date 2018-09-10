@@ -8,8 +8,8 @@ import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 
 /**
  * Mapper Utility.
@@ -19,6 +19,9 @@ public class WikiMapper
     private Text countDatePair = new Text();
     private Text articleName = new Text();
 
+    /**
+     * map function.
+     */
     public void map(Object key, Text value, Context context
                     ) throws IOException, InterruptedException  {
         // Implement the code here for mapper of wiki data analysis,
